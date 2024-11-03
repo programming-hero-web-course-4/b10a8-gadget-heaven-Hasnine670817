@@ -6,5 +6,18 @@
 
 body {
   font-family: "Sora", sans-serif;
-  /* color: #FFFFFF; */
+}
+
+.banner-nav .menu.menu-sm {
+  background-color: #9538E2;
+  box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* .banner-nav .btn__div {
+  margin-right: 5px !important;
+} */
+
+.active {
+  text-decoration: underline;
+  font-weight: 700;
 }

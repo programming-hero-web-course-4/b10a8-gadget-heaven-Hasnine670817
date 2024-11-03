@@ -12,26 +12,26 @@ const Footer = () => {
                     <div className='ftr-links text-center w-full mb-6 sm:mb-0 sm:w-auto'>
                         <h3 className='text-[18px] font-bold text-[#09080F] mb-4'>Services</h3>
                         <ul>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Product Support</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Order Tracking</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Shipping & Delivery</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Returns</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Product Support</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Order Tracking</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Shipping & Delivery</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Returns</a></li>
                         </ul>
                     </div>
                     <div className='ftr-links text-center w-full mb-6 sm:mb-0 sm:w-auto'>
                         <h3 className='text-[18px] font-bold text-[#09080F] mb-4'>Company</h3>
                         <ul>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">About Us</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Careers</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Contact</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">About Us</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Careers</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Contact</a></li>
                         </ul>
                     </div>
                     <div className='ftr-links text-center w-full mb-6 sm:mb-0 sm:w-auto'>
                         <h3 className='text-[18px] font-bold text-[#09080F] mb-4'>Legal</h3>
                         <ul>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Terms of Service</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Privacy Policy</a></li>
-                            <li><a className='text-base font-normal text-[#09080F99]' href="#">Cookie Policy</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Terms of Service</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Privacy Policy</a></li>
+                            <li><a className='text-base font-normal mb-2 inline-block text-[#09080F99]' href="#">Cookie Policy</a></li>
                         </ul>
                     </div>
                 </div>
