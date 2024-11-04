@@ -43,8 +43,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className='me-4'><img src={ShopIcon} alt="image" /></button>
-                <button><img src={HeartIcon} alt="image" /></button>
+                <button className='me-4 relative'><img src={ShopIcon} alt="image" /> <span className='bg-[#D8DADF] absolute -right-2 -top-0 text-center inline-block w-5 h-5 leading-5 rounded-full text-xs'>0</span></button>
+                <button className='relative'><img src={HeartIcon} alt="image" /> <span className='bg-[#D8DADF] absolute -right-2 -top-0 text-center inline-block w-5 h-5 leading-5 rounded-full text-xs'>0</span></button>
             </div>
         </div>
 

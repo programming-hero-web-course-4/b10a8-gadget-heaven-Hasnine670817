@@ -1,9 +1,9 @@
 [
     
     {
-      "product_id": "201",
+      "product_id": 201,
       "product_title": "Gaming Laptop X",
-      "product_image": "https://example.com/images/gaming_laptop.jpg",
+      "product_image": "https://i.ibb.co.com/kB1hYF7/images-9.jpg",
       "category": "Laptops",
       "price": 1499.99,
       "description": "High-performance gaming laptop with powerful graphics.",
@@ -18,9 +18,9 @@
       "other_field": { "warranty": "1 year", "brand": "GamingPro" }
     },
     {
-      "product_id": "202",
+      "product_id": 202,
       "product_title": "Ultrabook 14",
-      "product_image": "https://example.com/images/ultrabook.jpg",
+      "product_image": "https://i.ibb.co.com/ZWbNLRC/images-1.jpg",
       "category": "Laptops",
       "price": 999.99,
       "description": "Sleek and lightweight laptop for professionals.",
@@ -35,9 +35,9 @@
       "other_field": { "warranty": "1 year", "brand": "UltraTech" }
     },
     {
-      "product_id": "203",
+      "product_id": 203,
       "product_title": "2-in-1 Laptop",
-      "product_image": "https://example.com/images/2in1_laptop.jpg",
+      "product_image": "https://i.ibb.co.com/SwC3hzR/download.jpg",
       "category": "Laptops",
       "price": 849.99,
       "description": "Versatile laptop that converts into a tablet.",
@@ -52,9 +52,9 @@
       "other_field": { "warranty": "1 year", "brand": "FlexiTech" }
     },
     {
-      "product_id": "204",
+      "product_id": 204,
       "product_title": "Business Laptop",
-      "product_image": "https://example.com/images/business_laptop.jpg",
+      "product_image": "https://i.ibb.co.com/55Vgsy9/download-1.jpg",
       "category": "Laptops",
       "price": 1099.99,
       "description": "Designed for business professionals with robust performance.",
@@ -69,9 +69,9 @@
       "other_field": { "warranty": "1 year", "brand": "BizTech" }
     },
     {
-      "product_id": "205",
+      "product_id": 205,
       "product_title": "Budget Laptop",
-      "product_image": "https://example.com/images/budget_laptop.jpg",
+      "product_image": "https://i.ibb.co.com/r3YJQbJ/images.jpg",
       "category": "Laptops",
       "price": 399.99,
       "description": "Affordable laptop for everyday tasks.",
@@ -87,9 +87,9 @@
     },
   
     {
-      "product_id": "301",
+      "product_id": 301,
       "product_title": "Android Smartphone Z",
-      "product_image": "https://example.com/images/android_phone.jpg",
+      "product_image": "https://i.ibb.co.com/0r5nGy0/download-2.jpg",
       "category": "Phones",
       "price": 699.99,
       "description": "Feature-rich smartphone with stunning display.",
@@ -103,9 +103,9 @@
       "other_field": { "warranty": "1 year", "brand": "SmartTech" }
     },
     {
-      "product_id": "302",
+      "product_id": 302,
       "product_title": "Budget Phone",
-      "product_image": "https://example.com/images/budget_phone.jpg",
+      "product_image": "https://i.ibb.co.com/Nnc51wt/images-2.jpg",
       "category": "Phones",
       "price": 299.99,
       "description": "Affordable smartphone for basic use.",
@@ -119,9 +119,9 @@
       "other_field": { "warranty": "6 months", "brand": "ValuePhone" }
     },
     {
-      "product_id": "303",
+      "product_id": 303,
       "product_title": "Premium Smartphone X",
-      "product_image": "https://example.com/images/premium_phone.jpg",
+      "product_image": "https://i.ibb.co.com/NLyv4TV/images-3.jpg",
       "category": "Phones",
       "price": 999.99,
       "description": "High-end smartphone with exceptional performance.",
@@ -136,9 +136,9 @@
     },
   
     {
-      "product_id": "401",
+      "product_id": 401,
       "product_title": "Laptop Bag",
-      "product_image": "https://example.com/images/laptop_bag.jpg",
+      "product_image": "https://i.ibb.co.com/zZsMqb8/download-3.jpg",
       "category": "Accessories",
       "price": 49.99,
       "description": "Stylish and durable laptop bag for protection.",
@@ -152,9 +152,9 @@
       "other_field": { "warranty": "1 year", "brand": "BagPro" }
     },
     {
-      "product_id": "402",
+      "product_id": 402,
       "product_title": "Wireless Mouse",
-      "product_image": "https://example.com/images/wireless_mouse.jpg",
+      "product_image": "https://i.ibb.co.com/ZBhVT5T/images-4.jpg",
       "category": "Accessories",
       "price": 29.99,
       "description": "Ergonomic wireless mouse for comfortable use.",
@@ -168,9 +168,9 @@
       "other_field": { "warranty": "1 year", "brand": "ComfortTech" }
     },
     {
-      "product_id": "403",
+      "product_id": 403,
       "product_title": "Laptop Stand",
-      "product_image": "https://example.com/images/laptop_stand.jpg",
+      "product_image": "https://i.ibb.co.com/XWmXNd3/images-5.jpg",
       "category": "Accessories",
       "price": 39.99,
       "description": "Adjustable laptop stand for better ergonomics.",
@@ -184,9 +184,9 @@
       "other_field": { "warranty": "1 year", "brand": "StandPro" }
     },
     {
-        "product_id": "501",
+        "product_id": 501,
         "product_title": "Fitness Smartwatch A",
-        "product_image": "https://example.com/images/fitness_watch_a.jpg",
+        "product_image": "https://i.ibb.co.com/tp9fZQ1/download-4.jpg",
         "category": "Smart Watches",
         "price": 199.99,
         "description": "Track your fitness activities with style.",
@@ -200,9 +200,9 @@
         "other_field": { "warranty": "1 year", "brand": "FitTrack" }
       },
       {
-        "product_id": "502",
+        "product_id": 502,
         "product_title": "Luxury Smartwatch B",
-        "product_image": "https://example.com/images/luxury_watch_b.jpg",
+        "product_image": "https://i.ibb.co.com/yRRzbt9/download-5.jpg",
         "category": "Smart Watches",
         "price": 349.99,
         "description": "Elegant smartwatch with advanced features.",
@@ -216,9 +216,9 @@
         "other_field": { "warranty": "1 year", "brand": "LuxuryFit" }
       },
       {
-        "product_id": "503",
+        "product_id": 503,
         "product_title": "Sports Smartwatch C",
-        "product_image": "https://example.com/images/sports_watch_c.jpg",
+        "product_image": "https://i.ibb.co.com/V9yKfMq/download-6.jpg",
         "category": "Smart Watches",
         "price": 249.99,
         "description": "Designed for athletes with health tracking.",
@@ -232,9 +232,9 @@
         "other_field": { "warranty": "1 year", "brand": "SportTech" }
       },
       {
-        "product_id": "504",
+        "product_id": 504,
         "product_title": "Smartwatch D",
-        "product_image": "https://example.com/images/smart_watch_d.jpg",
+        "product_image": "https://i.ibb.co.com/9YF92c7/download-7.jpg",
         "category": "Smart Watches",
         "price": 159.99,
         "description": "Affordable smartwatch with essential features.",
@@ -250,9 +250,9 @@
     
       
       {
-        "product_id": "601",
+        "product_id": 601,
         "product_title": "MacBook Air 2023",
-        "product_image": "https://example.com/images/macbook_air.jpg",
+        "product_image": "https://i.ibb.co.com/HnXNYCR/images-6.jpg",
         "category": "MacBook",
         "price": 999.99,
         "description": "Ultra-thin and lightweight MacBook with M1 chip.",
@@ -267,9 +267,9 @@
         "other_field": { "warranty": "1 year", "brand": "Apple" }
       },
       {
-        "product_id": "602",
+        "product_id": 602,
         "product_title": "MacBook Pro 2023",
-        "product_image": "https://example.com/images/macbook_pro.jpg",
+        "product_image": "https://i.ibb.co.com/bKcC74w/images-7.jpg",
         "category": "MacBook",
         "price": 1299.99,
         "description": "Powerful MacBook for professionals with M1 Pro chip.",
@@ -286,9 +286,9 @@
     
       
       {
-        "product_id": "701",
+        "product_id": 701,
         "product_title": "iPhone 14",
-        "product_image": "https://example.com/images/iphone_14.jpg",
+        "product_image": "https://i.ibb.co.com/sPdZJcN/download-8.jpg",
         "category": "Iphone",
         "price": 799.99,
         "description": "Latest iPhone with exceptional camera and performance.",
@@ -302,9 +302,9 @@
         "other_field": { "warranty": "1 year", "brand": "Apple" }
       },
       {
-        "product_id": "702",
+        "product_id": 702,
         "product_title": "iPhone 14 Pro",
-        "product_image": "https://example.com/images/iphone_14_pro.jpg",
+        "product_image": "https://i.ibb.co.com/LvZ9YQ6/download-9.jpg",
         "category": "Iphone",
         "price": 999.99,
         "description": "Pro model with advanced features and triple camera.",

@@ -10,7 +10,7 @@ const Home = () => {
 
     return (
         <div>
-            <div className='max-w-[1600px] px-2 md:px-[30px] pt-28 -mt-40 relative'>
+            <div className='max-w-[1600px] px-2 md:px-[30px] pt-[100px] sm:pt-28 -mt-40 relative'>
                 <div className='bg-[#9538E2] border-[7px] border-[#F6F6F6] text-center rounded-3xl md:rounded-[32px] mb-20 md:mb-[190px] lg:mb-[350px] xl:mb-[490px]'>
                     <div className=''>
                         <div className='text-white banner-nav mb-7 pt-3'>
@@ -33,7 +33,7 @@ const Home = () => {
                 <div className='container px-4 sm:px-10 md:px-14 lg:px-24 xl:px-0 xl:max-w-[1100px] 2xl:max-w-[1280px] mx-auto'>
                     <h2 className='text-xl md:text-[40px] font-bold text-[#0B0B0B] text-center mb-12'>Explore Cutting-Edge Gadgets</h2>
                     <div className='grid lg:grid-cols-[4fr_8fr] xl:grid-cols-[3fr_9fr] gap-6'>
-                        <div className='bg-white p-6 border border-[#09080F1A] rounded-2xl'>
+                        <div className='bg-white p-6 border border-[#09080F1A] rounded-2xl h-[350px] md:h-[380px]'>
                             <Tabs tabs={tabs} />
                         </div>
                         <Outlet></Outlet>
