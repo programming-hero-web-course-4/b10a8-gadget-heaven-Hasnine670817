@@ -8,6 +8,7 @@ import {
 import Root from './Components/Root/Root';
 import Home from './Components/Pages/Home/Home';
 import Error_page from './Components/Pages/Error_page/Error_page';
+import TabCards from './Components/Pages/TabsCards/TabCards';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,20 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('../categories.json'),
+        children: [
+          {
+            path: '/tabs/:category',
+            element: <TabCards></TabCards>,
+            loader: () => fetch('../products.json'),
+          },
+          {
+            path: '/',
+            element: <TabCards />,
+            loader: () => fetch('../products.json'),
+          },
+        ],
       },
     ],
   },

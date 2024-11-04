@@ -6,6 +6,7 @@
 
 body {
   font-family: "Sora", sans-serif;
+  background-color: #F6F6F6;
 }
 
 .banner-nav .menu.menu-sm {
@@ -13,11 +14,15 @@ body {
   box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.5);
 }
 
-/* .banner-nav .btn__div {
-  margin-right: 5px !important;
-} */
-
-.active {
+.header-nav .active {
   text-decoration: underline;
   font-weight: 700;
+}
+
+.tabs-area .active {
+  color: #FFF;
+  background: #9538E2;
+  font-weight: 800;
+  box-shadow: 0px 4px 50px 0px #0B0B0B26 inset;
+
 }
