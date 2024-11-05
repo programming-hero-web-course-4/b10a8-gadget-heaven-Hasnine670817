@@ -11,7 +11,7 @@ const Home = () => {
 
     return (
         <div className='main-banner'>
-            <div className='max-w-[1600px] px-2 md:px-[30px] pt-[100px] sm:pt-28 -mt-[180px] sm:-mt-[190px] relative'>
+            <div className='max-w-[1600px] mx-auto px-2 md:px-[30px] pt-[100px] sm:pt-28 -mt-[180px] sm:-mt-[190px] relative'>
                 <div className='bg-[#9538E2] border-[7px] border-[#F6F6F6] text-center rounded-3xl md:rounded-[32px] mb-20 md:mb-[190px] lg:mb-[350px] xl:mb-[490px]'>
                     <div className=''>
                         <div className='text-white banner-nav mb-7 pt-3'>

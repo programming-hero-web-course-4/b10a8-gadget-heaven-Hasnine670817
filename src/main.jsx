@@ -11,6 +11,8 @@ import Error_page from './Components/Pages/Error_page/Error_page';
 import TabCards from './Components/Pages/TabsCards/TabCards';
 import ProductDetails from './Components/Pages/ProductDetails/ProductDetails';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
+import Statistics from './Components/Pages/Statistics/Statistics';
+import DemoPage from './Components/Pages/DemoPage/DemoPage';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +46,14 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
         loader: () => fetch('../products.json')
+      },
+      {
+        path: '/statistics',
+        element: <Statistics></Statistics>
+      },
+      {
+        path: '/demo-page',
+        element: <DemoPage></DemoPage>
       },
     ],
   },

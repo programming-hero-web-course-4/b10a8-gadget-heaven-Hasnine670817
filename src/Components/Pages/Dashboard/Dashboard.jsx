@@ -217,8 +217,8 @@ const Dashboard = () => {
             </Tabs>
 
             {/* Modal */}
-            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle p-[30px]">
-                <div className="modal-box sm:max-w-[450px] text-center p-6 md:p-8">
+            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle p-[30px] block top-[20%] sm:grid sm:top-[initial]">
+                <div className="modal-box max-w-[450px] sm:max-w-[450px] text-center p-6 md:p-8 rounded-2xl">
                     <img className='mx-auto' src={SuccessImg} alt="image" />
                     <h3 className='text-xl md:text-2xl font-bold text-[#09080F] mt-6 border-b border-[#09080F1A] pb-3 mb-3'>Payment Successfully</h3>
                     <p className="text-xs md:text-base font-medium text-[#09080F99] mb-2">Thanks for purchasing</p>

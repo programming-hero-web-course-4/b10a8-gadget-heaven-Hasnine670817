@@ -11,13 +11,14 @@ const Navbar = ({ cartItemCount, wishlistCount }) => {
     const isHomePage = location.pathname === '/';
 
     const links = <>
-        <NavLink className={`text-[14px] sm:text-base font-medium mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/'}>Home</NavLink>
-        <NavLink className={`text-[14px] sm:text-base font-medium mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/statistics'}>Statistics</NavLink>
-        <NavLink className={`text-[14px] sm:text-base font-medium mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/dashboard'}>Dashboard</NavLink>
+        <NavLink className={`text-[14px] sm:text-base lg:text-[14px] xl:text-base font-medium mx-6 lg:mx-4 xl:mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/'}>Home</NavLink>
+        <NavLink className={`text-[14px] sm:text-base lg:text-[14px] xl:text-base font-medium mx-6 lg:mx-4 xl:mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/statistics'}>Statistics</NavLink>
+        <NavLink className={`text-[14px] sm:text-base lg:text-[14px] xl:text-base font-medium mx-6 lg:mx-4 xl:mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/dashboard'}>Dashboard</NavLink>
+        <NavLink className={`text-[14px] sm:text-base lg:text-[14px] xl:text-base font-medium mx-6 lg:mx-4 xl:mx-6 py-2 lg:py-0 ${isHomePage ? 'text-white' : 'text-black'}`} to={'/demo-page'}>Demo(Faqs)</NavLink>
     </>
 
     return (
-        <div className='w-full max-w-[1600px] px-2 md:px-[30px] z-[500] relative'>
+        <div className='w-full max-w-[1600px] mx-auto px-2 md:px-[30px] z-[500] relative'>
             <div className={`${isHomePage ? 'pt-6' : 'pt-0'}`}>
                 <div className={`navbar header-nav bg-transparent container pt-5 px-4 sm:px-10 md:px-14 lg:px-24 xl:px-0 xl:max-w-[1100px] 2xl:max-w-[1280px] mx-auto`}>
                     <div className="navbar-start">
