@@ -5,6 +5,8 @@ import 'react-tabs/style/react-tabs.css';
 import { getStoredCardList, getStoredWishList, removeFromStoredCardList, removeFromStoredWishList, addToStoredCardList } from '../Utility/addToDb';
 import SortImg from '../../../assets/images/sort.png';
 import DeleteBtn from '../../../assets/images/delete.png';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Dashboard = () => {
 
@@ -49,8 +51,13 @@ const Dashboard = () => {
 
         const updatedProductList = productList.filter(product => product.product_id !== productId);
         setProductList(updatedProductList);
-
         setCartItemCount(updatedProductList.length);
+
+        // Show toast notification for deletion
+        toast.error("Product removed from cart!", {
+            position: "top-center",
+            autoClose: 2000,
+        });
     };
 
     // Remove product from Wishlist
@@ -59,8 +66,13 @@ const Dashboard = () => {
 
         const updatedWishlist = wishlist.filter(product => product.product_id !== productId);
         setWishList(updatedWishlist);
-
         setWishlistCount(updatedWishlist.length);
+
+        // Show toast notification for deletion
+        toast.error("Product removed from wishlist!", {
+            position: "top-center",
+            autoClose: 2000,
+        });
     };
 
     // Add product to Cart from Wishlist
@@ -92,6 +104,9 @@ const Dashboard = () => {
 
     return (
         <div className='dashboard-area'>
+            {/* Toast Container */}
+            <ToastContainer />
+
             <div className='products-details-banner bg-[#9538E2] pt-8 pb-[115px] text-center'>
                 <h3 className='text-xl sm:text-2xl md:text-[32px] font-bold text-white mb-4'>Dashboard</h3>
                 <p className='text-[14px] md:text-base font-normal text-white px-5 lg:px-0'>

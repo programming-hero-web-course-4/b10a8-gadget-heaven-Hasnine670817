@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
-import WishListImg from '../../../assets/images/wishlist.png'
-import { addStoredWishList, addToStoredCardList } from "../Utility/addToDb";
+import WishListImg from '../../../assets/images/wishlist.png';
+import { addStoredWishList, addToStoredCardList, getStoredCardList, getStoredWishList } from "../Utility/addToDb";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
     const data = useLoaderData();
@@ -19,15 +21,44 @@ const ProductDetails = () => {
     };
 
     const handleAddToCard = (id) => {
-        addToStoredCardList(id);
+        const storedList = getStoredCardList();
+        if (storedList.includes(id)) {
+            // Show error toast if product is already in cart
+            toast.error("Product is already in the cart!", {
+                position: "top-center",
+                autoClose: 2000,
+            });
+        } else {
+            addToStoredCardList(id);
+            toast.success("Product added to cart!", {
+                position: "top-center",
+                autoClose: 2000,
+            });
+        }
     }
 
     const handleAddToWishList = (id) => {
-        addStoredWishList(id);
+        const storedWishList = getStoredWishList();
+        if (storedWishList.includes(id)) {
+            // Show error toast if product is already in wishlist
+            toast.error("Product is already in the wishlist!", {
+                position: "top-center",
+                autoClose: 2000,
+            });
+        } else {
+            addStoredWishList(id);
+            toast.info("Product added to wishlist!", {
+                position: "top-center",
+                autoClose: 2000,
+            });
+        }
     }
 
     return (
         <div className="mb-[100px]">
+            {/* Toast Container */}
+            <ToastContainer />
+
             <div className='products-details-banner bg-[#9538E2] pt-8 pb-[235px] text-center'>
                 <h3 className='text-xl sm:text-2xl md:text-[32px] font-bold text-white mb-4'>Product Details</h3>
                 <p className='text-[14px] md:text-base font-normal text-white px-5 md:px-0'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br className="hidden md:block" /> the coolest accessories, we have it all!</p>
@@ -63,9 +94,9 @@ const ProductDetails = () => {
                             <span className="text-[14px] font-medium text-[#09080FCC] py-[7px] px-[14px] rounded-[32px] bg-[#09080F0D]">{rating}</span>
                         </div>
 
-                        {/* Add-card and WishList btn */}
+                        {/* Add to Cart and Wishlist Buttons */}
                         <div className="flex gap-4 items-center mt-4">
-                            <button onClick={() => handleAddToCard(productId)} className="btn h-auto min-h-0 text-[18px] font-bold text-white bg-[#9538E2] rounded-[32px] py-3 px-[22px]" type="button">Add To Card</button>
+                            <button onClick={() => handleAddToCard(productId)} className="btn h-auto min-h-0 text-[18px] font-bold text-white bg-[#9538E2] rounded-[32px] py-3 px-[22px]" type="button">Add To Cart</button>
                             <button onClick={() => handleAddToWishList(productId)} type="button"><img src={WishListImg} alt="image" /></button>
                         </div>
                     </div>
