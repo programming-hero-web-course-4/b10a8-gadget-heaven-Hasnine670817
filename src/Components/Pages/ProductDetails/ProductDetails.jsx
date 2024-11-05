@@ -2,11 +2,13 @@ import React from "react";
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 import WishListImg from '../../../assets/images/wishlist.png';
+import ShopImg2 from '../../../assets/images/shop1.png'
 import { addStoredWishList, addToStoredCardList, getStoredCardList, getStoredWishList } from "../Utility/addToDb";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
+    
     const data = useLoaderData();
     const { productId } = useParams();
     const id = parseInt(productId);
@@ -96,7 +98,7 @@ const ProductDetails = () => {
 
                         {/* Add to Cart and Wishlist Buttons */}
                         <div className="flex gap-4 items-center mt-4">
-                            <button onClick={() => handleAddToCard(productId)} className="btn h-auto min-h-0 text-[18px] font-bold text-white bg-[#9538E2] rounded-[32px] py-3 px-[22px]" type="button">Add To Cart</button>
+                            <button onClick={() => handleAddToCard(productId)} className="btn h-auto min-h-0 text-[18px] font-bold text-white bg-[#9538E2] rounded-[32px] py-3 px-[22px]" type="button">Add To Cart <img src={ShopImg2} alt="image" /></button>
                             <button onClick={() => handleAddToWishList(productId)} type="button"><img src={WishListImg} alt="image" /></button>
                         </div>
                     </div>

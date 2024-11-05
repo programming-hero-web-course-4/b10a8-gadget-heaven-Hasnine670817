@@ -15,7 +15,7 @@ const Statistics = () => {
                 </p>
             </div>
             <div className='w-full sm:w-11/12 md:w-10/12 mx-auto mb-[100px]'>
-                <h2 className="text-xl md:text-2xl font-bold text-[#0B0B0B] mt-12">Statistics</h2>
+                <h2 className="text-xl md:text-2xl font-bold text-[#0B0B0B] mt-12 container pt-5 px-4 sm:px-10 md:px-14 lg:px-24 xl:px-0 xl:max-w-[1100px] 2xl:max-w-[1280px] mx-auto">Statistics</h2>
                 <div className="overflow-x-auto mt-8">
                     <BarChart
                         width={window.innerWidth < 640 ? 300 : 1130}  // Small device width

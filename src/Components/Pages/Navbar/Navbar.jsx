@@ -4,6 +4,7 @@ import ShopIcon from '../../../assets/images/shop.png';
 import HeartIcon from '../../../assets/images/heart.png';
 
 const Navbar = ({ cartItemCount, wishlistCount }) => {
+    
 
     const location = useLocation();
     

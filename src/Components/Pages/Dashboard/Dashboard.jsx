@@ -106,16 +106,14 @@ const Dashboard = () => {
 
     // Close modal and clear cart & wishlist
     const handleCloseModal = () => {
-        // Clear the cart and wishlist
         setProductList([]);
         setWishList([]);
         setCartItemCount(0);
         setWishlistCount(0);
 
-        // Close the modal
+        
         document.getElementById('my_modal_5').close();
 
-        // Remove items from local storage as well
         getStoredCardList().forEach(id => removeFromStoredCardList(id));
         getStoredWishList().forEach(id => removeFromStoredWishList(id));
 
@@ -124,7 +122,7 @@ const Dashboard = () => {
 
     return (
         <div className='dashboard-area'>
-            {/* Toast Container */}
+            
             <ToastContainer />
 
             <div className='products-details-banner bg-[#9538E2] pt-8 pb-[115px] text-center'>

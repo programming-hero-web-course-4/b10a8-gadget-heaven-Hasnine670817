@@ -9,11 +9,15 @@ const Root = () => {
     const [wishlistCount, setWishlistCount] = useState(0);
 
     useEffect(() => {
-        let pageTitle = 'Gadget Heaven | Home';
+        let pageTitle = 'Home | Gadget Heaven';
         if (location.pathname === '/') {
             document.title = pageTitle;
         } else if (location.pathname === '/dashboard') {
-            document.title = 'Gadget Heaven | Dashboard';
+            document.title = 'Dashboard | Gadget Heaven';
+        } else if (location.pathname === '/statistics') {
+            document.title = 'Statistics | Gadget Heaven';
+        } else if (location.pathname === '/demo-page') {
+            document.title = 'Demo(Faqs) | Gadget Heaven';
         } else {
             document.title = 'Gadget Heaven';
         }
