@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 import WishListImg from '../../../assets/images/wishlist.png'
+import { addStoredWishList, addToStoredCardList } from "../Utility/addToDb";
 
 const ProductDetails = () => {
     const data = useLoaderData();
@@ -16,6 +17,14 @@ const ProductDetails = () => {
     const ratingChanged = (newRating) => {
         console.log(newRating);
     };
+
+    const handleAddToCard = (id) => {
+        addToStoredCardList(id);
+    }
+
+    const handleAddToWishList = (id) => {
+        addStoredWishList(id);
+    }
 
     return (
         <div className="mb-[100px]">
@@ -56,8 +65,8 @@ const ProductDetails = () => {
 
                         {/* Add-card and WishList btn */}
                         <div className="flex gap-4 items-center mt-4">
-                            <button className="btn h-auto min-h-0 text-[18px] font-bold text-white bg-[#9538E2] rounded-[32px] py-3 px-[22px]" type="button">Add To Card</button>
-                            <button type="button"><img src={WishListImg} alt="image" /></button>
+                            <button onClick={() => handleAddToCard(productId)} className="btn h-auto min-h-0 text-[18px] font-bold text-white bg-[#9538E2] rounded-[32px] py-3 px-[22px]" type="button">Add To Card</button>
+                            <button onClick={() => handleAddToWishList(productId)} type="button"><img src={WishListImg} alt="image" /></button>
                         </div>
                     </div>
                 </div>

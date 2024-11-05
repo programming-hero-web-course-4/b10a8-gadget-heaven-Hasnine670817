@@ -10,6 +10,7 @@ import Home from './Components/Pages/Home/Home';
 import Error_page from './Components/Pages/Error_page/Error_page';
 import TabCards from './Components/Pages/TabsCards/TabCards';
 import ProductDetails from './Components/Pages/ProductDetails/ProductDetails';
+import Dashboard from './Components/Pages/Dashboard/Dashboard';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path: '/products/:productId',
         element: <ProductDetails></ProductDetails>,
+        loader: () => fetch('../products.json')
+      },
+      { 
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
         loader: () => fetch('../products.json')
       },
     ],
