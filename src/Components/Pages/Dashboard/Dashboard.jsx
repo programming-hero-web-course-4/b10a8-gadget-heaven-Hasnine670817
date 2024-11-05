@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useLoaderData, useOutletContext } from 'react-router-dom';
+import { useLoaderData, useNavigate, useOutletContext } from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getStoredCardList, getStoredWishList, removeFromStoredCardList, removeFromStoredWishList, addToStoredCardList } from '../Utility/addToDb';
 import SortImg from '../../../assets/images/sort.png';
 import DeleteBtn from '../../../assets/images/delete.png';
+import SuccessImg from '../../../assets/images/success.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -17,6 +18,7 @@ const Dashboard = () => {
     const [isSortedDescending, setIsSortedDescending] = useState(false);
 
     const allProducts = useLoaderData();
+    const navigate = useNavigate();
 
     // Fetch products for cart
     useEffect(() => {
@@ -102,6 +104,24 @@ const Dashboard = () => {
         setIsSortedDescending(!isSortedDescending);
     };
 
+    // Close modal and clear cart & wishlist
+    const handleCloseModal = () => {
+        // Clear the cart and wishlist
+        setProductList([]);
+        setWishList([]);
+        setCartItemCount(0);
+        setWishlistCount(0);
+
+        // Close the modal
+        document.getElementById('my_modal_5').close();
+
+        // Remove items from local storage as well
+        getStoredCardList().forEach(id => removeFromStoredCardList(id));
+        getStoredWishList().forEach(id => removeFromStoredWishList(id));
+
+        navigate('/');
+    };
+
     return (
         <div className='dashboard-area'>
             {/* Toast Container */}
@@ -131,7 +151,7 @@ const Dashboard = () => {
                                 <button onClick={handleSortByPrice} className='border border-[#B752E0] text-[#9538E2] text-base md:text-[18px] font-semibold py-3 px-[22px] rounded-[32px] flex gap-[10px]'>
                                     Sort By Price <img src={SortImg} alt="image" />
                                 </button>
-                                <button className='border border-[#B752E0] text-white text-base lg:text-[18px] font-semibold py-3 px-[22px] rounded-[32px] flex gap-[10px] bg-[#B752E0]'>
+                                <button className='border border-[#B752E0] text-white text-base lg:text-[18px] font-semibold py-3 px-[22px] rounded-[32px] flex gap-[10px] bg-[#B752E0]' onClick={() => document.getElementById('my_modal_5').showModal()}>
                                     Purchase
                                 </button>
                             </div>
@@ -195,6 +215,19 @@ const Dashboard = () => {
                     </div>
                 </TabPanel>
             </Tabs>
+
+            {/* Modal */}
+            <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle p-[30px]">
+                <div className="modal-box sm:max-w-[450px] text-center p-6 md:p-8">
+                    <img className='mx-auto' src={SuccessImg} alt="image" />
+                    <h3 className='text-xl md:text-2xl font-bold text-[#09080F] mt-6 border-b border-[#09080F1A] pb-3 mb-3'>Payment Successfully</h3>
+                    <p className="text-xs md:text-base font-medium text-[#09080F99] mb-2">Thanks for purchasing</p>
+                    <p className="text-xs md:text-base font-medium text-[#09080F99] mb-4">Total: {calculateTotalCost(productList)}</p>
+                    <div className="modal-action block">
+                        <button className="btn block w-full bg-[#EAE9E9] text-[#09080F] rounded-[32px]" onClick={handleCloseModal}>Close</button>
+                    </div>
+                </div>
+            </dialog>
         </div>
     );
 };
