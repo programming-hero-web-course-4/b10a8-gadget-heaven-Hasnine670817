@@ -49,11 +49,12 @@ const router = createBrowserRouter([
       },
       {
         path: '/statistics',
-        element: <Statistics></Statistics>
+        element: <Statistics></Statistics>,
+        loader: () => fetch('../products.json')
       },
       {
         path: '/demo-page',
-        element: <DemoPage></DemoPage>
+        element: <DemoPage></DemoPage>,
       },
     ],
   },
