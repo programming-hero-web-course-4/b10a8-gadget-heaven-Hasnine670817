@@ -25,7 +25,6 @@ const ProductDetails = () => {
     const handleAddToCard = (id) => {
         const storedList = getStoredCardList();
         if (storedList.includes(id)) {
-            // Show error toast if product is already in cart
             toast.error("Product is already in the cart!", {
                 position: "top-center",
                 autoClose: 2000,
@@ -42,7 +41,6 @@ const ProductDetails = () => {
     const handleAddToWishList = (id) => {
         const storedWishList = getStoredWishList();
         if (storedWishList.includes(id)) {
-            // Show error toast if product is already in wishlist
             toast.error("Product is already in the wishlist!", {
                 position: "top-center",
                 autoClose: 2000,
