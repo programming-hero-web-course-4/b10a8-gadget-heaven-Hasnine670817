@@ -122,7 +122,7 @@ const Dashboard = () => {
 
     return (
         <div className='dashboard-area'>
-            
+
             <ToastContainer />
 
             <div className='products-details-banner bg-[#9538E2] pt-8 pb-[115px] text-center'>
